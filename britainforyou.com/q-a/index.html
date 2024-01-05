@@ -5,177 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="max-image-preview:large" />
     <title>Вопрос-Ответ &#8211; BritainForYou</title>
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="BritainForYou &raquo; Лента"
-      href="../feed/index.html" />
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="BritainForYou &raquo; Лента комментариев"
-      href="../comments/feed/index.html" />
-    <script>
-      window._wpemojiSettings = {
-        baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
-        ext: ".png",
-        svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
-        svgExt: ".svg",
-        source: {
-          concatemoji:
-            "https:\/\/britainforyou.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.4.2",
-        },
-      };
-      /*! This file is auto-generated */
-      !(function (i, n) {
-        var o, s, e;
-        function c(e) {
-          try {
-            var t = { supportTests: e, timestamp: new Date().valueOf() };
-            sessionStorage.setItem(o, JSON.stringify(t));
-          } catch (e) {}
-        }
-        function p(e, t, n) {
-          e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-            e.fillText(t, 0, 0);
-          var t = new Uint32Array(
-              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
-            ),
-            r =
-              (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-              e.fillText(n, 0, 0),
-              new Uint32Array(
-                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
-              ));
-          return t.every(function (e, t) {
-            return e === r[t];
-          });
-        }
-        function u(e, t, n) {
-          switch (t) {
-            case "flag":
-              return n(
-                e,
-                "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
-                "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"
-              )
-                ? !1
-                : !n(
-                    e,
-                    "\ud83c\uddfa\ud83c\uddf3",
-                    "\ud83c\uddfa\u200b\ud83c\uddf3"
-                  ) &&
-                    !n(
-                      e,
-                      "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
-                      "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
-                    );
-            case "emoji":
-              return !n(
-                e,
-                "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff",
-                "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff"
-              );
-          }
-          return !1;
-        }
-        function f(e, t, n) {
-          var r =
-              "undefined" != typeof WorkerGlobalScope &&
-              self instanceof WorkerGlobalScope
-                ? new OffscreenCanvas(300, 150)
-                : i.createElement("canvas"),
-            a = r.getContext("2d", { willReadFrequently: !0 }),
-            o = ((a.textBaseline = "top"), (a.font = "600 32px Arial"), {});
-          return (
-            e.forEach(function (e) {
-              o[e] = t(a, e, n);
-            }),
-            o
-          );
-        }
-        function t(e) {
-          var t = i.createElement("script");
-          (t.src = e), (t.defer = !0), i.head.appendChild(t);
-        }
-        "undefined" != typeof Promise &&
-          ((o = "wpEmojiSettingsSupports"),
-          (s = ["flag", "emoji"]),
-          (n.supports = { everything: !0, everythingExceptFlag: !0 }),
-          (e = new Promise(function (e) {
-            i.addEventListener("DOMContentLoaded", e, { once: !0 });
-          })),
-          new Promise(function (t) {
-            var n = (function () {
-              try {
-                var e = JSON.parse(sessionStorage.getItem(o));
-                if (
-                  "object" == typeof e &&
-                  "number" == typeof e.timestamp &&
-                  new Date().valueOf() < e.timestamp + 604800 &&
-                  "object" == typeof e.supportTests
-                )
-                  return e.supportTests;
-              } catch (e) {}
-              return null;
-            })();
-            if (!n) {
-              if (
-                "undefined" != typeof Worker &&
-                "undefined" != typeof OffscreenCanvas &&
-                "undefined" != typeof URL &&
-                URL.createObjectURL &&
-                "undefined" != typeof Blob
-              )
-                try {
-                  var e =
-                      "postMessage(" +
-                      f.toString() +
-                      "(" +
-                      [JSON.stringify(s), u.toString(), p.toString()].join(
-                        ","
-                      ) +
-                      "));",
-                    r = new Blob([e], { type: "text/javascript" }),
-                    a = new Worker(URL.createObjectURL(r), {
-                      name: "wpTestEmojiSupports",
-                    });
-                  return void (a.onmessage = function (e) {
-                    c((n = e.data)), a.terminate(), t(n);
-                  });
-                } catch (e) {}
-              c((n = f(s, u, p)));
-            }
-            t(n);
-          })
-            .then(function (e) {
-              for (var t in e)
-                (n.supports[t] = e[t]),
-                  (n.supports.everything =
-                    n.supports.everything && n.supports[t]),
-                  "flag" !== t &&
-                    (n.supports.everythingExceptFlag =
-                      n.supports.everythingExceptFlag && n.supports[t]);
-              (n.supports.everythingExceptFlag =
-                n.supports.everythingExceptFlag && !n.supports.flag),
-                (n.DOMReady = !1),
-                (n.readyCallback = function () {
-                  n.DOMReady = !0;
-                });
-            })
-            .then(function () {
-              return e;
-            })
-            .then(function () {
-              var e;
-              n.supports.everything ||
-                (n.readyCallback(),
-                (e = n.source || {}).concatemoji
-                  ? t(e.concatemoji)
-                  : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
-            }));
-      })((window, document), window._wpemojiSettings);
-    </script>
+
     <style id="wp-block-image-inline-css">
       .wp-block-image img {
         box-sizing: border-box;
@@ -2188,125 +2018,10 @@
       rel="alternate"
       type="text/xml+oembed"
       href="../wp-json/oembed/1.0/embed-5?url=https%3A%2F%2Fbritainforyou.com%2Fq-a%2F&#038;format=xml" />
-    <meta name="cdp-version" content="1.4.0" />
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-KMH49WVC");
-    </script>
-    <!-- End Google Tag Manager -->
-
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-      (function (m, e, t, r, i, k, a) {
-        m[i] =
-          m[i] ||
-          function () {
-            (m[i].a = m[i].a || []).push(arguments);
-          };
-        m[i].l = 1 * new Date();
-        for (var j = 0; j < document.scripts.length; j++) {
-          if (document.scripts[j].src === r) {
-            return;
-          }
-        }
-        (k = e.createElement(t)),
-          (a = e.getElementsByTagName(t)[0]),
-          (k.async = 1),
-          (k.src = r),
-          a.parentNode.insertBefore(k, a);
-      })(
-        window,
-        document,
-        "script",
-        "https://mc.yandex.ru/metrika/tag.js",
-        "ym"
-      );
-
-      ym(95683305, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        webvisor: true,
-      });
-    </script>
-    <noscript
-      ><div>
-        <img
-          src="https://mc.yandex.ru/watch/95683305"
-          style="position: absolute; left: -9999px"
-          alt="" /></div
-    ></noscript>
-    <!-- /Yandex.Metrika counter -->
-    <style id="wp-fonts-local">
-      @font-face {
-        font-family: "Plus Jakarta Sans";
-        font-style: normal;
-        font-weight: 400;
-        font-display: block;
-        src: url("../wp-content/themes/lemmony/assets/fonts/jakarta/PlusJakartaSans-Regular.woff2")
-          format("woff2");
-        font-stretch: normal;
-      }
-      @font-face {
-        font-family: "Plus Jakarta Sans";
-        font-style: normal;
-        font-weight: 500;
-        font-display: block;
-        src: url("../wp-content/themes/lemmony/assets/fonts/jakarta/PlusJakartaSans-Medium.woff2")
-          format("woff2");
-        font-stretch: normal;
-      }
-      @font-face {
-        font-family: "Plus Jakarta Sans";
-        font-style: normal;
-        font-weight: 600;
-        font-display: block;
-        src: url("../wp-content/themes/lemmony/assets/fonts/jakarta/PlusJakartaSans-SemiBold.woff2")
-          format("woff2");
-        font-stretch: normal;
-      }
-      @font-face {
-        font-family: "Plus Jakarta Sans";
-        font-style: normal;
-        font-weight: 700;
-        font-display: block;
-        src: url("../wp-content/themes/lemmony/assets/fonts/jakarta/PlusJakartaSans-Bold.woff2")
-          format("woff2");
-        font-stretch: normal;
-      }
-      @font-face {
-        font-family: "Plus Jakarta Sans";
-        font-style: normal;
-        font-weight: 800;
-        font-display: block;
-        src: url("../wp-content/themes/lemmony/assets/fonts/jakarta/PlusJakartaSans-ExtraBold.woff2")
-          format("woff2");
-        font-stretch: normal;
-      }
-    </style>
   </head>
 
   <body
     class="page-template page-template-page-without-title page page-id-21 wp-embed-responsive">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-KMH49WVC"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <div class="wp-site-blocks">
       <header class="site-header wp-block-template-part">
         <div
@@ -2504,7 +2219,7 @@
                   style="color: #2c2c2c"
                   class="wp-social-link wp-social-link-telegram has-body-color wp-block-social-link">
                   <a
-                    href="https://t.me/rabota_v_anglii1"
+                    href="https://t.me/manager_elmdon"
                     class="wp-block-social-link-anchor"
                     ><svg
                       width="24"
@@ -2526,7 +2241,7 @@
                   style="color: #2c2c2c"
                   class="wp-social-link wp-social-link-whatsapp has-body-color wp-block-social-link">
                   <a
-                    href="https://wa.me/+447537169506"
+                    href="https://wa.me/+447495649956"
                     class="wp-block-social-link-anchor"
                     ><svg
                       width="24"
@@ -2911,8 +2626,8 @@
                   <p
                     class="has-body-alt-color has-text-color has-small-font-size">
                     <span style="text-decoration: underline"
-                      ><a href="mailto:info@britainforyou.com"
-                        >info@britainforyou.com</a
+                      ><a href="mailto:info@elmdon-recruitment.com"
+                        >info@elmdon-recruitment.com</a
                       ></span
                     >
                   </p>
@@ -2922,7 +2637,7 @@
                     <span style="text-decoration: underline"></span
                     ><span style="text-decoration: underline"></span
                     ><a
-                      href="https://find-and-update.company-information.service.gov.uk/company/08120267"
+                      href="https://find-and-update.company-information.service.gov.uk/search/companies?q=10437485"
                       target="_blank"
                       rel="noreferrer noopener"
                       >Проверка лицензии</a
@@ -2979,7 +2694,7 @@
                     <li
                       class="wp-social-link wp-social-link-telegram wp-block-social-link">
                       <a
-                        href="https://t.me/rabota_v_anglii1"
+                        href="https://t.me/manager_elmdon"
                         class="wp-block-social-link-anchor"
                         ><svg
                           width="24"
@@ -3001,7 +2716,7 @@
                     <li
                       class="wp-social-link wp-social-link-whatsapp wp-block-social-link">
                       <a
-                        href="https://wa.me/+447537169506"
+                        href="https://wa.me/+447495649956"
                         class="wp-block-social-link-anchor"
                         ><svg
                           width="24"
@@ -3052,7 +2767,7 @@
               style="flex-basis: 72%">
               <p
                 class="has-body-alt-color has-text-color has-tiny-plus-font-size">
-                <strong>08120267 &#8211; Incorporated on 16 August 2016</strong>
+                <strong>10437485 &#8211; Incorporated on 16 August 2016</strong>
                 | <strong>RECRUITMENT AGENDA LIMITED</strong>
               </p>
             </div>
@@ -3108,57 +2823,11 @@
         ]
       }
     </script>
-    <script id="wp-block-template-skip-link-js-after">
-      (function () {
-        var skipLinkTarget = document.querySelector("main"),
-          sibling,
-          skipLinkTargetID,
-          skipLink;
 
-        // Early exit if a skip-link target can't be located.
-        if (!skipLinkTarget) {
-          return;
-        }
-
-        /*
-         * Get the site wrapper.
-         * The skip-link will be injected in the beginning of it.
-         */
-        sibling = document.querySelector(".wp-site-blocks");
-
-        // Early exit if the root element was not found.
-        if (!sibling) {
-          return;
-        }
-
-        // Get the skip-link target's ID, and generate one if it doesn't exist.
-        skipLinkTargetID = skipLinkTarget.id;
-        if (!skipLinkTargetID) {
-          skipLinkTargetID = "wp--skip-link--target";
-          skipLinkTarget.id = skipLinkTargetID;
-        }
-
-        // Create the skip link.
-        skipLink = document.createElement("a");
-        skipLink.classList.add("skip-link", "screen-reader-text");
-        skipLink.href = "#" + skipLinkTargetID;
-        skipLink.innerHTML = "Перейти к содержимому";
-
-        // Inject the skip link.
-        sibling.parentElement.insertBefore(skipLink, sibling);
-      })();
-    </script>
     <script
       src="../wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8"
       id="swv-js"></script>
-    <script id="contact-form-7-js-extra">
-      var wpcf7 = {
-        api: {
-          root: "https:\/\/britainforyou.com\/wp-json\/",
-          namespace: "contact-form-7\/v1",
-        },
-      };
-    </script>
+
     <script
       src="../wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.8"
       id="contact-form-7-js"></script>

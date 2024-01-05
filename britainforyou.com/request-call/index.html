@@ -5,177 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="max-image-preview:large" />
     <title>Заказать обратный звонок &#8211; BritainForYou</title>
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="BritainForYou &raquo; Лента"
-      href="../feed/index.html" />
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="BritainForYou &raquo; Лента комментариев"
-      href="../comments/feed/index.html" />
-    <script>
-      window._wpemojiSettings = {
-        baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
-        ext: ".png",
-        svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
-        svgExt: ".svg",
-        source: {
-          concatemoji:
-            "https:\/\/britainforyou.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.4.2",
-        },
-      };
-      /*! This file is auto-generated */
-      !(function (i, n) {
-        var o, s, e;
-        function c(e) {
-          try {
-            var t = { supportTests: e, timestamp: new Date().valueOf() };
-            sessionStorage.setItem(o, JSON.stringify(t));
-          } catch (e) {}
-        }
-        function p(e, t, n) {
-          e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-            e.fillText(t, 0, 0);
-          var t = new Uint32Array(
-              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
-            ),
-            r =
-              (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-              e.fillText(n, 0, 0),
-              new Uint32Array(
-                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
-              ));
-          return t.every(function (e, t) {
-            return e === r[t];
-          });
-        }
-        function u(e, t, n) {
-          switch (t) {
-            case "flag":
-              return n(
-                e,
-                "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
-                "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"
-              )
-                ? !1
-                : !n(
-                    e,
-                    "\ud83c\uddfa\ud83c\uddf3",
-                    "\ud83c\uddfa\u200b\ud83c\uddf3"
-                  ) &&
-                    !n(
-                      e,
-                      "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
-                      "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
-                    );
-            case "emoji":
-              return !n(
-                e,
-                "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff",
-                "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff"
-              );
-          }
-          return !1;
-        }
-        function f(e, t, n) {
-          var r =
-              "undefined" != typeof WorkerGlobalScope &&
-              self instanceof WorkerGlobalScope
-                ? new OffscreenCanvas(300, 150)
-                : i.createElement("canvas"),
-            a = r.getContext("2d", { willReadFrequently: !0 }),
-            o = ((a.textBaseline = "top"), (a.font = "600 32px Arial"), {});
-          return (
-            e.forEach(function (e) {
-              o[e] = t(a, e, n);
-            }),
-            o
-          );
-        }
-        function t(e) {
-          var t = i.createElement("script");
-          (t.src = e), (t.defer = !0), i.head.appendChild(t);
-        }
-        "undefined" != typeof Promise &&
-          ((o = "wpEmojiSettingsSupports"),
-          (s = ["flag", "emoji"]),
-          (n.supports = { everything: !0, everythingExceptFlag: !0 }),
-          (e = new Promise(function (e) {
-            i.addEventListener("DOMContentLoaded", e, { once: !0 });
-          })),
-          new Promise(function (t) {
-            var n = (function () {
-              try {
-                var e = JSON.parse(sessionStorage.getItem(o));
-                if (
-                  "object" == typeof e &&
-                  "number" == typeof e.timestamp &&
-                  new Date().valueOf() < e.timestamp + 604800 &&
-                  "object" == typeof e.supportTests
-                )
-                  return e.supportTests;
-              } catch (e) {}
-              return null;
-            })();
-            if (!n) {
-              if (
-                "undefined" != typeof Worker &&
-                "undefined" != typeof OffscreenCanvas &&
-                "undefined" != typeof URL &&
-                URL.createObjectURL &&
-                "undefined" != typeof Blob
-              )
-                try {
-                  var e =
-                      "postMessage(" +
-                      f.toString() +
-                      "(" +
-                      [JSON.stringify(s), u.toString(), p.toString()].join(
-                        ","
-                      ) +
-                      "));",
-                    r = new Blob([e], { type: "text/javascript" }),
-                    a = new Worker(URL.createObjectURL(r), {
-                      name: "wpTestEmojiSupports",
-                    });
-                  return void (a.onmessage = function (e) {
-                    c((n = e.data)), a.terminate(), t(n);
-                  });
-                } catch (e) {}
-              c((n = f(s, u, p)));
-            }
-            t(n);
-          })
-            .then(function (e) {
-              for (var t in e)
-                (n.supports[t] = e[t]),
-                  (n.supports.everything =
-                    n.supports.everything && n.supports[t]),
-                  "flag" !== t &&
-                    (n.supports.everythingExceptFlag =
-                      n.supports.everythingExceptFlag && n.supports[t]);
-              (n.supports.everythingExceptFlag =
-                n.supports.everythingExceptFlag && !n.supports.flag),
-                (n.DOMReady = !1),
-                (n.readyCallback = function () {
-                  n.DOMReady = !0;
-                });
-            })
-            .then(function () {
-              return e;
-            })
-            .then(function () {
-              var e;
-              n.supports.everything ||
-                (n.readyCallback(),
-                (e = n.source || {}).concatemoji
-                  ? t(e.concatemoji)
-                  : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
-            }));
-      })((window, document), window._wpemojiSettings);
-    </script>
+
     <style id="wp-block-image-inline-css">
       .wp-block-image img {
         box-sizing: border-box;
@@ -2161,125 +1991,10 @@
       rel="alternate"
       type="text/xml+oembed"
       href="../wp-json/oembed/1.0/embed-11?url=https%3A%2F%2Fbritainforyou.com%2Frequest-call%2F&#038;format=xml" />
-    <meta name="cdp-version" content="1.4.0" />
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-KMH49WVC");
-    </script>
-    <!-- End Google Tag Manager -->
-
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-      (function (m, e, t, r, i, k, a) {
-        m[i] =
-          m[i] ||
-          function () {
-            (m[i].a = m[i].a || []).push(arguments);
-          };
-        m[i].l = 1 * new Date();
-        for (var j = 0; j < document.scripts.length; j++) {
-          if (document.scripts[j].src === r) {
-            return;
-          }
-        }
-        (k = e.createElement(t)),
-          (a = e.getElementsByTagName(t)[0]),
-          (k.async = 1),
-          (k.src = r),
-          a.parentNode.insertBefore(k, a);
-      })(
-        window,
-        document,
-        "script",
-        "https://mc.yandex.ru/metrika/tag.js",
-        "ym"
-      );
-
-      ym(95683305, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        webvisor: true,
-      });
-    </script>
-    <noscript
-      ><div>
-        <img
-          src="https://mc.yandex.ru/watch/95683305"
-          style="position: absolute; left: -9999px"
-          alt="" /></div
-    ></noscript>
-    <!-- /Yandex.Metrika counter -->
-    <style id="wp-fonts-local">
-      @font-face {
-        font-family: "Plus Jakarta Sans";
-        font-style: normal;
-        font-weight: 400;
-        font-display: block;
-        src: url("../wp-content/themes/lemmony/assets/fonts/jakarta/PlusJakartaSans-Regular.woff2")
-          format("woff2");
-        font-stretch: normal;
-      }
-      @font-face {
-        font-family: "Plus Jakarta Sans";
-        font-style: normal;
-        font-weight: 500;
-        font-display: block;
-        src: url("../wp-content/themes/lemmony/assets/fonts/jakarta/PlusJakartaSans-Medium.woff2")
-          format("woff2");
-        font-stretch: normal;
-      }
-      @font-face {
-        font-family: "Plus Jakarta Sans";
-        font-style: normal;
-        font-weight: 600;
-        font-display: block;
-        src: url("../wp-content/themes/lemmony/assets/fonts/jakarta/PlusJakartaSans-SemiBold.woff2")
-          format("woff2");
-        font-stretch: normal;
-      }
-      @font-face {
-        font-family: "Plus Jakarta Sans";
-        font-style: normal;
-        font-weight: 700;
-        font-display: block;
-        src: url("../wp-content/themes/lemmony/assets/fonts/jakarta/PlusJakartaSans-Bold.woff2")
-          format("woff2");
-        font-stretch: normal;
-      }
-      @font-face {
-        font-family: "Plus Jakarta Sans";
-        font-style: normal;
-        font-weight: 800;
-        font-display: block;
-        src: url("../wp-content/themes/lemmony/assets/fonts/jakarta/PlusJakartaSans-ExtraBold.woff2")
-          format("woff2");
-        font-stretch: normal;
-      }
-    </style>
   </head>
 
   <body
     class="page-template page-template-page-without-title page page-id-136 wp-embed-responsive">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-KMH49WVC"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <div class="wp-site-blocks">
       <header class="site-header wp-block-template-part">
         <div
@@ -2476,7 +2191,7 @@
                   style="color: #2c2c2c"
                   class="wp-social-link wp-social-link-telegram has-body-color wp-block-social-link">
                   <a
-                    href="https://t.me/rabota_v_anglii1"
+                    href="https://t.me/manager_elmdon"
                     class="wp-block-social-link-anchor"
                     ><svg
                       width="24"
@@ -2498,7 +2213,7 @@
                   style="color: #2c2c2c"
                   class="wp-social-link wp-social-link-whatsapp has-body-color wp-block-social-link">
                   <a
-                    href="https://wa.me/+447537169506"
+                    href="https://wa.me/+447495649956"
                     class="wp-block-social-link-anchor"
                     ><svg
                       width="24"
@@ -2651,14 +2366,68 @@
                       name="email-callback"
                   /></span>
                 </p>
-                <p>
-                  <input
-                    class="wpcf7-form-control wpcf7-submit has-spinner"
-                    type="submit"
-                    value="Жду звонок!" /><span class="wpcf7-spinner"></span>
-                </p>
+                <div class="call-us">
+                  <p>
+                    <input
+                      class="wpcf7-form-control wpcf7-submit has-spinner"
+                      type="submit"
+                      value="Жду звонок!" /><span class="wpcf7-spinner"></span>
+                  </p>
+                  <div
+                    class="wp-block-column is-layout-flow wp-container-core-column-layout-7 wp-block-column-is-layout-flow d-f-end">
+                    <h3>Связаться с нами:</h3>
+                    <ul
+                      class="wp-block-social-links is-style-logos-border is-horizontal is-layout-flex wp-block-social-links-is-layout-flex">
+                      <li
+                        class="wp-social-link wp-social-link-telegram wp-block-social-link">
+                        <a
+                          href="https://t.me/manager_elmdon"
+                          class="wp-block-social-link-anchor"
+                          ><svg
+                            width="24"
+                            height="24"
+                            viewbox="0 0 128 128"
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                            focusable="false">
+                            <path
+                              d="M28.9700376,63.3244248 C47.6273373,55.1957357 60.0684594,49.8368063 66.2934036,47.2476366 C84.0668845,39.855031 87.7600616,38.5708563 90.1672227,38.528 C90.6966555,38.5191258 91.8804274,38.6503351 92.6472251,39.2725385 C93.294694,39.7979149 93.4728387,40.5076237 93.5580865,41.0057381 C93.6433345,41.5038525 93.7494885,42.63857 93.6651041,43.5252052 C92.7019529,53.6451182 88.5344133,78.2034783 86.4142057,89.5379542 C85.5170662,94.3339958 83.750571,95.9420841 82.0403991,96.0994568 C78.3237996,96.4414641 75.5015827,93.6432685 71.9018743,91.2836143 C66.2690414,87.5912212 63.0868492,85.2926952 57.6192095,81.6896017 C51.3004058,77.5256038 55.3966232,75.2369981 58.9976911,71.4967761 C59.9401076,70.5179421 76.3155302,55.6232293 76.6324771,54.2720454 C76.6721165,54.1030573 76.7089039,53.4731496 76.3346867,53.1405352 C75.9604695,52.8079208 75.4081573,52.921662 75.0095933,53.0121213 C74.444641,53.1403447 65.4461175,59.0880351 48.0140228,70.8551922 C45.4598218,72.6091037 43.1463059,73.4636682 41.0734751,73.4188859 C38.7883453,73.3695169 34.3926725,72.1268388 31.1249416,71.0646282 C27.1169366,69.7617838 23.931454,69.0729605 24.208838,66.8603276 C24.3533167,65.7078514 25.9403832,64.5292172 28.9700376,63.3244248 Z"></path></svg
+                          ><span
+                            class="wp-block-social-link-label screen-reader-text"
+                            >Telegram</span
+                          ></a
+                        >
+                      </li>
+
+                      <li
+                        class="wp-social-link wp-social-link-whatsapp wp-block-social-link">
+                        <a
+                          href="https://wa.me/+447495649956"
+                          class="wp-block-social-link-anchor"
+                          ><svg
+                            width="24"
+                            height="24"
+                            viewbox="0 0 24 24"
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                            focusable="false">
+                            <path
+                              d="M 12.011719 2 C 6.5057187 2 2.0234844 6.478375 2.0214844 11.984375 C 2.0204844 13.744375 2.4814687 15.462563 3.3554688 16.976562 L 2 22 L 7.2324219 20.763672 C 8.6914219 21.559672 10.333859 21.977516 12.005859 21.978516 L 12.009766 21.978516 C 17.514766 21.978516 21.995047 17.499141 21.998047 11.994141 C 22.000047 9.3251406 20.962172 6.8157344 19.076172 4.9277344 C 17.190172 3.0407344 14.683719 2.001 12.011719 2 z M 12.009766 4 C 14.145766 4.001 16.153109 4.8337969 17.662109 6.3417969 C 19.171109 7.8517969 20.000047 9.8581875 19.998047 11.992188 C 19.996047 16.396187 16.413812 19.978516 12.007812 19.978516 C 10.674812 19.977516 9.3544062 19.642812 8.1914062 19.007812 L 7.5175781 18.640625 L 6.7734375 18.816406 L 4.8046875 19.28125 L 5.2851562 17.496094 L 5.5019531 16.695312 L 5.0878906 15.976562 C 4.3898906 14.768562 4.0204844 13.387375 4.0214844 11.984375 C 4.0234844 7.582375 7.6067656 4 12.009766 4 z M 8.4765625 7.375 C 8.3095625 7.375 8.0395469 7.4375 7.8105469 7.6875 C 7.5815469 7.9365 6.9355469 8.5395781 6.9355469 9.7675781 C 6.9355469 10.995578 7.8300781 12.182609 7.9550781 12.349609 C 8.0790781 12.515609 9.68175 15.115234 12.21875 16.115234 C 14.32675 16.946234 14.754891 16.782234 15.212891 16.740234 C 15.670891 16.699234 16.690438 16.137687 16.898438 15.554688 C 17.106437 14.971687 17.106922 14.470187 17.044922 14.367188 C 16.982922 14.263188 16.816406 14.201172 16.566406 14.076172 C 16.317406 13.951172 15.090328 13.348625 14.861328 13.265625 C 14.632328 13.182625 14.464828 13.140625 14.298828 13.390625 C 14.132828 13.640625 13.655766 14.201187 13.509766 14.367188 C 13.363766 14.534188 13.21875 14.556641 12.96875 14.431641 C 12.71875 14.305641 11.914938 14.041406 10.960938 13.191406 C 10.218937 12.530406 9.7182656 11.714844 9.5722656 11.464844 C 9.4272656 11.215844 9.5585938 11.079078 9.6835938 10.955078 C 9.7955938 10.843078 9.9316406 10.663578 10.056641 10.517578 C 10.180641 10.371578 10.223641 10.267562 10.306641 10.101562 C 10.389641 9.9355625 10.347156 9.7890625 10.285156 9.6640625 C 10.223156 9.5390625 9.737625 8.3065 9.515625 7.8125 C 9.328625 7.3975 9.131125 7.3878594 8.953125 7.3808594 C 8.808125 7.3748594 8.6425625 7.375 8.4765625 7.375 z"></path></svg
+                          ><span
+                            class="wp-block-social-link-label screen-reader-text"
+                            >WhatsApp</span
+                          ></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
                 <div class="wpcf7-response-output" aria-hidden="true"></div>
               </form>
+
+              <!-- Messanger block -->
             </div>
           </div>
         </div>
@@ -2795,8 +2564,8 @@
                     <p
                       class="has-body-alt-color has-text-color has-small-font-size">
                       <span style="text-decoration: underline"
-                        ><a href="mailto:info@britainforyou.com"
-                          >info@britainforyou.com</a
+                        ><a href="mailto:info@elmdon-recruitment.com"
+                          >info@elmdon-recruitment.com</a
                         ></span
                       >
                     </p>
@@ -2806,7 +2575,7 @@
                       <span style="text-decoration: underline"></span
                       ><span style="text-decoration: underline"></span
                       ><a
-                        href="https://find-and-update.company-information.service.gov.uk/company/08120267"
+                        href="https://find-and-update.company-information.service.gov.uk/search/companies?q=10437485"
                         target="_blank"
                         rel="noreferrer noopener"
                         >Проверка лицензии</a
@@ -2863,7 +2632,7 @@
                       <li
                         class="wp-social-link wp-social-link-telegram wp-block-social-link">
                         <a
-                          href="https://t.me/rabota_v_anglii1"
+                          href="https://t.me/manager_elmdon"
                           class="wp-block-social-link-anchor"
                           ><svg
                             width="24"
@@ -2885,7 +2654,7 @@
                       <li
                         class="wp-social-link wp-social-link-whatsapp wp-block-social-link">
                         <a
-                          href="https://wa.me/+447537169506"
+                          href="https://wa.me/+447495649956"
                           class="wp-block-social-link-anchor"
                           ><svg
                             width="24"
@@ -2937,7 +2706,7 @@
                 <p
                   class="has-body-alt-color has-text-color has-tiny-plus-font-size">
                   <strong
-                    >08120267 &#8211; Incorporated on 16 August 2016</strong
+                    >10437485 &#8211; Incorporated on 16 August 2016</strong
                   >
                   | <strong>RECRUITMENT AGENDA LIMITED</strong>
                 </p>
@@ -2946,46 +2715,7 @@
           </div>
         </footer>
       </div>
-      <script id="wp-block-template-skip-link-js-after">
-        (function () {
-          var skipLinkTarget = document.querySelector("main"),
-            sibling,
-            skipLinkTargetID,
-            skipLink;
 
-          // Early exit if a skip-link target can't be located.
-          if (!skipLinkTarget) {
-            return;
-          }
-
-          /*
-           * Get the site wrapper.
-           * The skip-link will be injected in the beginning of it.
-           */
-          sibling = document.querySelector(".wp-site-blocks");
-
-          // Early exit if the root element was not found.
-          if (!sibling) {
-            return;
-          }
-
-          // Get the skip-link target's ID, and generate one if it doesn't exist.
-          skipLinkTargetID = skipLinkTarget.id;
-          if (!skipLinkTargetID) {
-            skipLinkTargetID = "wp--skip-link--target";
-            skipLinkTarget.id = skipLinkTargetID;
-          }
-
-          // Create the skip link.
-          skipLink = document.createElement("a");
-          skipLink.classList.add("skip-link", "screen-reader-text");
-          skipLink.href = "#" + skipLinkTargetID;
-          skipLink.innerHTML = "Перейти к содержимому";
-
-          // Inject the skip link.
-          sibling.parentElement.insertBefore(skipLink, sibling);
-        })();
-      </script>
       <script
         src="../wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8"
         id="swv-js"></script>
