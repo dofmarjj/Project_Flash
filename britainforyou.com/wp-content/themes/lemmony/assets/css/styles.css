@@ -225,6 +225,12 @@ blockquote.wp-block-quote:after {
   line-height: 1;
 }
 
+@media (max-width: 599.99px) {
+  .wp-block-image {
+    width: 45%;
+  }
+}
+
 .wp-block-image figcaption {
   margin-top: 1.5em;
   text-align: left;
