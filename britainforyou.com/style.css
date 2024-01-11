@@ -19,10 +19,9 @@
   width: 100px !important;
 }
 
-/* .wp-block-image img {
-  max-width: 100% !important;
-} */
-
+.wpcf7-form .init {
+  margin-bottom: 55px !important;
+}
 /* Slider */
 
 .block-body {
@@ -33,8 +32,15 @@
 }
 
 .swiper {
-  width: 100%;
+  width: 80%;
   /* height: 500px; */
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -9px !important;
 }
 
 .swiper-slide {
