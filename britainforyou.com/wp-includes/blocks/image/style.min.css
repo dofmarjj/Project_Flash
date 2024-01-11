@@ -1,7 +1,7 @@
 .wp-block-image img {
   box-sizing: border-box;
   height: auto;
-  max-width: 50% !important;
+  max-width: 50%;
   vertical-align: bottom;
 }
 .wp-block-image[style*="border-radius"] img,
