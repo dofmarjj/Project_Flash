@@ -59,3 +59,30 @@
 .fs-18 {
   font-size: 18px;
 }
+
+.has-huge-font-size,
+h2 .wp-block-heading {
+  font-size: 60px !important;
+}
+@media (max-width: 445px) {
+  .has-huge-font-size,
+  h2 .wp-block-heading {
+    font-size: 40px !important;
+  }
+}
+
+.mr-0 {
+  margin: 0 !important;
+}
+
+.font-size__footer {
+  font-size: 20px;
+}
+
+.font-size__footer--15 {
+  font-size: 15px;
+}
+
+.full-w {
+  width: 100%;
+}
