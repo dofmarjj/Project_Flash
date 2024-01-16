@@ -86,3 +86,11 @@ h2 .wp-block-heading {
 .full-w {
   width: 100%;
 }
+
+.text-footer {
+  font-size: 20px !important;
+}
+
+.wp-block-columns-is-layout-flex {
+  gap: 50px !important;
+}
