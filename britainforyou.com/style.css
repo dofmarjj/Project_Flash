@@ -94,3 +94,8 @@ h2 .wp-block-heading {
 .wp-block-columns-is-layout-flex {
   gap: 50px !important;
 }
+
+.allert {
+  display: flex;
+  flex-direction: column;
+}

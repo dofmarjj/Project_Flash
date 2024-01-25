@@ -2317,12 +2317,10 @@
                 <ul></ul>
               </div>
               <form
-                action="/request-call/#wpcf7-f40-p136-o1"
+                id="tg"
                 method="post"
                 class="wpcf7-form init"
-                aria-label="Контактная форма"
-                novalidate="novalidate"
-                data-status="init">
+                aria-label="Контактная форма">
                 <div style="display: none">
                   <input type="hidden" name="_wpcf7" value="40" />
                   <input type="hidden" name="_wpcf7_version" value="5.8" />
@@ -2348,11 +2346,11 @@
                       size="40"
                       class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel"
                       aria-required="true"
-                      aria-invalid="false"
                       placeholder="Номер телефона, по которому мы свяжемся с Вами"
                       value=""
                       type="tel"
-                      name="phone-callback"
+                      name="phone"
+                      required
                   /></span>
                 </p>
                 <p>
@@ -2367,16 +2365,21 @@
                       placeholder="Ваш email, если вдруг телефон будет недоступен"
                       value=""
                       type="email"
-                      name="email-callback"
+                      name="email"
+                      required
                   /></span>
                 </p>
                 <div class="call-us">
-                  <p>
-                    <input
-                      class="wpcf7-form-control wpcf7-submit has-spinner"
-                      type="submit"
-                      value="Жду звонок!" /><span class="wpcf7-spinner"></span>
-                  </p>
+                  <div class="allert">
+                    <div id="success" class="succes-mes" role="alert"></div>
+                    <p>
+                      <input
+                        class="wpcf7-form-control wpcf7-submit has-spinner"
+                        type="submit"
+                        value="Жду звонок!" /><span
+                        class="wpcf7-spinner"></span>
+                    </p>
+                  </div>
                   <div
                     class="wp-block-column is-layout-flow wp-container-core-column-layout-7 wp-block-column-is-layout-flow d-f-end">
                     <h3>Связаться с нами:</h3>
@@ -2491,7 +2494,7 @@
                     ">
                     <a
                       class="wp-block-button__link has-body-color has-background-background-color has-text-color has-background wp-element-button"
-                      href="request-call/index.html"
+                      href="../request-call/index.html"
                       target="_blank"
                       rel="noreferrer noopener"
                       >Заказать звонок</a
@@ -2740,20 +2743,9 @@
           </div>
         </footer>
       </div>
+      <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+      <script src="../send-tg.js"></script>
 
-      <script
-        src="../wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8"
-        id="swv-js"></script>
-      <script id="contact-form-7-js-extra">
-        var wpcf7 = {
-          api: {
-            root: "https:\/\/britainforyou.com\/wp-json\/",
-          },
-        };
-      </script>
-      <script
-        src="../wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.8"
-        id="contact-form-7-js"></script>
       <script
         src="../wp-content/themes/lemmony/assets/libraries/simpleParallax/simpleParallax.min.js?ver=5.5.1"
         id="simpleparallax-js"></script>

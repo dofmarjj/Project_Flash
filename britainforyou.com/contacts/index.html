@@ -2619,11 +2619,9 @@
               <ul></ul>
             </div>
             <form
-              action="/contacts/#wpcf7-f122-p19-o1"
-              method="post"
+              id="tg"
               class="wpcf7-form init"
               aria-label="Контактная форма"
-              novalidate="novalidate"
               data-status="init"
               style="margin-bottom: 100px">
               <div style="display: none">
@@ -2638,30 +2636,27 @@
                 <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
               </div>
               <p>
-                <span class="wpcf7-form-control-wrap" data-name="name-contact"
+                <span class="wpcf7-form-control-wrap"
                   ><input
                     size="40"
                     class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                    autocomplete="name"
-                    aria-required="true"
-                    aria-invalid="false"
                     placeholder="Ваше имя*"
                     value=""
                     type="text"
-                    name="name-contact"
+                    name="name"
+                    required
                 /></span>
               </p>
               <p>
-                <span class="wpcf7-form-control-wrap" data-name="email-contact"
+                <span class="wpcf7-form-control-wrap"
                   ><input
                     size="40"
                     class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
-                    aria-required="true"
-                    aria-invalid="false"
                     placeholder="Ваш имейл, на который мы сможем ответить*"
                     value=""
                     type="email"
-                    name="email-contact"
+                    name="email"
+                    required
                 /></span>
               </p>
               <p>
@@ -2669,25 +2664,25 @@
                   ><input
                     size="40"
                     class="wpcf7-form-control wpcf7-tel wpcf7-text wpcf7-validates-as-tel wpcf7-validates-as-required"
-                    aria-invalid="false"
+                    aria-invalid="true"
                     placeholder="Номер телефона"
+                    pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                    minlength="18"
+                    maxlength="18"
                     value=""
                     type="tel"
-                    name="phone-contact"
+                    name="phone"
+                    required
                 /></span>
               </p>
               <p>
-                <span
-                  class="wpcf7-form-control-wrap"
-                  data-name="message-contact">
+                <span class="wpcf7-form-control-wrap">
                   <textarea
                     cols="40"
                     rows="10"
                     class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
-                    aria-required="true"
-                    aria-invalid="false"
                     placeholder="Текст сообщения*"
-                    name="message-contact"></textarea>
+                    name="mess"></textarea>
                 </span>
               </p>
               <p>* — обязательное поле для заполнения</p>
@@ -2695,9 +2690,8 @@
                 <input
                   class="wpcf7-form-control wpcf7-submit has-spinner"
                   type="submit"
-                  value="Отправить" /><span class="wpcf7-spinner"></span>
+                  value="Отправить" />
               </p>
-              <div class="wpcf7-response-output" aria-hidden="true"></div>
             </form>
           </div>
         </div>
@@ -2759,7 +2753,7 @@
                   ">
                   <a
                     class="wp-block-button__link has-body-color has-background-background-color has-text-color has-background wp-element-button"
-                    href="request-call/index.html"
+                    href="../request-call/index.html"
                     target="_blank"
                     rel="noreferrer noopener"
                     >Заказать звонок</a
@@ -3009,6 +3003,9 @@
       </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <script src="../send-tg.js"></script>
     <script
       src="../wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8"
       id="swv-js"></script>
