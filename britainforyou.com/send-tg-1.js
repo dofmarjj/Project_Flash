@@ -3,12 +3,14 @@ const CHAT_ID = "-1001992581148";
 const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 const success = document.getElementById("success");
 
-document.getElementById("tg").addEventListener("submit", function (e) {
+document.getElementById("tg-1").addEventListener("submit", function (e) {
   e.preventDefault();
 
   let message = `<b>Заявка </b>\n`;
   message += `<b>Телефон</b> ${this.phone.value}\n`;
   message += `<b>Email</b> ${this.email.value}\n`;
+  message += `<b>Email</b> ${this.name.value}\n`;
+  message += `<b>Email</b> ${this.mess.value}\n`;
 
   axios
     .post(URI_API, {
@@ -20,7 +22,8 @@ document.getElementById("tg").addEventListener("submit", function (e) {
     .then((res) => {
       this.phone.value = "";
       this.email.value = "";
-
+      this.name.value = "";
+      this.mess.value = "";
       success.innerHTML = "Отправлено";
       success.style.display = "block";
     });

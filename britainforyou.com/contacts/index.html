@@ -2619,7 +2619,7 @@
               <ul></ul>
             </div>
             <form
-              id="tg"
+              id="tg-1"
               class="wpcf7-form init"
               aria-label="Контактная форма"
               data-status="init"
@@ -2666,7 +2666,6 @@
                     class="wpcf7-form-control wpcf7-tel wpcf7-text wpcf7-validates-as-tel wpcf7-validates-as-required"
                     aria-invalid="true"
                     placeholder="Номер телефона"
-                    pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
                     minlength="18"
                     maxlength="18"
                     value=""
@@ -2687,6 +2686,7 @@
               </p>
               <p>* — обязательное поле для заполнения</p>
               <p>
+                <div id="success" class="succes-mes" role="alert"></div>
                 <input
                   class="wpcf7-form-control wpcf7-submit has-spinner"
                   type="submit"
@@ -3005,7 +3005,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
-    <script src="../send-tg.js"></script>
+    <script src="../send-tg-1.js"></script>
     <script
       src="../wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8"
       id="swv-js"></script>
